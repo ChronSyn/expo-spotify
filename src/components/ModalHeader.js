@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
-import { colors, device, fonts } from '../api';
+import { colors, device, fonts } from '../constants';
 
 // components
 import TouchIcon from './TouchIcon';
@@ -61,8 +61,9 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.white,
-    fontFamily: fonts.spotifyRegular,
-    fontSize: 16
+    fontFamily: fonts.spotifyBold,
+    fontSize: 16,
+    textAlign: 'center'
   },
   left: {
     alignItems: 'flex-start',
